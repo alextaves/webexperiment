@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DavidNav01</title>
+    <title>David-services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="home">
+    <main class="main-services">
         <nav class="navbar">
             <span class="navbar-toggle" id="js-navbar-toggle">
                 <i class="fas fa-bars"></i>
             </span>
-            <a href="#" class="faded-letter">o</a>
+            <!-- <a href="#" class="faded-letter">o</a> -->
             
-                <ul class="main-nav">
+                <ul class="main-nav" id="js-menu">
                     <li><a href="#" class="nav-links services">services</a></li>
                     <li><a href="#" class="nav-links stylist">stylist</a></li>
                     <li><a href="#" class="nav-links book">book</a></li>
@@ -24,10 +24,71 @@
                     <li><a href="#" class="nav-links instagram">instagram</a></li>
                     <li><a href="#" class="nav-links chat">chat</a></li>
                 </ul>
-            </nav>    
+        </nav> 
+            <div class="full-logo">
+            <img class="graphic-logo" src="logo.svg" alt="logo"> 
+            <h1 class="name-logo">hair<br>by david<br>& co</h1>
             </div>
-        <p class="shrink">Pull screen <br> <- <br> to see full<br>image</p>
-    
-    <script src="app.js"></script>
+
+        <h1 class="services">services</h1>
+        <div class="cut">
+            <h2 class="service-type">Hair Cut and Style</h2>
+            <p>All listed colour prices are starting rates. Prices can only be confirmed by your stylist.</p>
+
+            <h3 class="service-type-detail">Woman's Haircut & Style - $70+</h3>
+            <p>Consultation, shampoo, condition, scalp massage, cut and blow dry/style</p>
+
+            <h3 class="service-type-detail">Men's Haircut - $50+</h3>
+            <p>Consultation, shampoo, condition, scalp massage, cut and blow dry/style</p>
+        
+            <h3 class="service-type-detail">Wash & Style -$45+</h3>
+            <p>Shampoo, condition, blow dry and style</p>
+            
+            <h3 class="service-type-detail">Children's Haircut - $30+</h3>
+            <p>Consultation, cut and style</p>
+        </div> 
+        <div class="color">
+            <h2 class="service-type service-color">Hair Color and Treatments</h2>
+            <p>First time specialty colour services and hilites must book a consultation (at no extra charge 15 min) before the actual service appointment and finishing blowdry. All colour services come with a complimentary speed dry.</p>
+            <p>All returning guests who would like a full style and finish, please book appropriately.</p>
+
+            <h3 class="service-type-detail">Colour - $75+</h3>
+            <p>Base colour</p>
+
+            <h3 class="service-type-detail">Colour & Highlights - $120+</h3>
+            <p>Base colour with highlights</p>
+
+            <h3 class="service-type-detail">Highlights - $120+</h3>
+            <p>Partial, half or full head highlights</p>
+
+            <h3 class="service-type-detail">Balayage / Speciality Color Techniques - $150+</h3>
+            <p>Free hand highlighting and custom color techniques</p>
+
+            <h3 class="service-type-detail">Bleach & Tone - $120+</h3>
+            <p>Root touch up & toner</p>
+
+            <h2 class="service-type service-color  color-correction">Colour Correction - service based on consultation</h2>
+            <h3 class="service-type-detail">Smoothing Treatment (per hour) - $75+</h3>
+            <p>Our non toxic smoothing treatment gives 3 months of fast drying & frizz free hair!</p>
+
+            <h3 class="service-type-detail">Wedding Services - determined upon consultation</h3>
+            
+            <h2 class="service-type disclaimer">ALL PRICES ARE SUBJECT TO CHANGE.</h2>
+            <p class="disclaimer">Student Discount 15% off all services. Please visit our booking site for extended service menu. If unable to book a specific date or time through our online booking system, please contact us. Clients please note: Requests for corrections to haircuts/colour must be made within two weeks of service.</p>
+        </div>  
+        </main>  
+             
+        <footer>
+            <h3>Toronto's Fashion District</h3>
+            <p>477 Richmond St. West, Toronto<span> 416 913 2146</span></p>
+        </footer>
+        <script>
+                let mainNav = document.getElementById('js-menu');
+                let navBarToggle = document.getElementById('js-navbar-toggle');
+        
+                navBarToggle.addEventListener('click', function () {
+                    mainNav.classList.toggle('active');
+                });
+            </script>
 </body>
 </html>
